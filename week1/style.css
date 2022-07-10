@@ -5,3 +5,145 @@
   --color-blue-light: #96A9C4;
   --color-blue-dark: #415165;
 }
+
+/* 共用 */
+
+.fz-sm{
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.fz-md{
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.fz-lg{
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.fw-light{
+  font-weight: 300;
+}
+
+.fw-regular{
+  font-weight: 400;
+}
+
+.fw-medium{
+  font-weight: 500;
+}
+
+.fw-semibold{
+  font-weight: 600;
+}
+
+.text-red{
+  color: var(--color-red);
+}
+
+.text-white{
+  color: var(--color-white);
+}
+
+.text-center{
+  text-align: center;
+}
+
+.bg-blue-dark{
+  background-color: var(--color-blue-dark);
+}
+
+.border-bottom-black{
+  border-bottom: 1px solid var(--color-black);
+}
+
+.border-bottom-white{
+  border-bottom: 1px solid var(--color-white);
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-sm{
+  max-width: 996px;
+  margin: 0 auto;
+}
+
+.title {
+  padding-bottom: 8px;
+}
+
+.title .en{
+  vertical-align: text-top;
+  margin-left: 16px;
+}
+
+/* custom */
+.name{
+  line-height: 95px;
+  font-size: 80px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid var(--color-black);
+}
+
+.photo{
+  margin: 48px 0;
+}
+
+.profile .content p + p{
+  margin-top: 24px;
+}
+
+.education .content p + p{
+  margin-top: 16px;
+}
+
+.profile .content, .education .content{
+  padding-top: 16px;
+  margin-bottom: 64px;
+}
+
+.skill .title, footer .title{
+  padding-top: 24px;
+}
+
+.skill .content{
+  padding: 40px 0;
+}
+
+.skill-list{
+  border-left: 1px solid var(--color-blue-light);
+  padding-left: 23px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.skill-item + .skill-item{
+  margin-top: 8px;
+}
+
+.contact-item + .contact-item{
+  margin-top: 16px;
+}
+
+.contact-link{
+  text-decoration: none;
+}
+
+.contact-link:hover{
+  color: var(--color-blue-light);
+}
+
+.social-link + .social-link{
+  margin-left: 24px;
+}
+
+footer .content{
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
