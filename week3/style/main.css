@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+}
+
+:root {
+  --color-red: #aa0601;
+  --color-red-dark: #650300;
+  --color-pink: #fbf2f2;
+  --color-black: #000000;
+  --color-white: #ffffff;
+}
+
+a,
+p {
+  color: var(--color-white);
+}
+
+/* ----material icon---- */
+.material-icons {
+  vertical-align: middle;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
+}
+.material-icons.md-24 {
+  font-size: 24px;
+}
+.material-icons.md-36 {
+  font-size: 36px;
+}
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ---- mobile first ---- */
+.container {
+  max-width: 100%;
+}
+
+header,footer {
+  background-color: var(--color-red);
+}
+
+header .container {
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: none;
+}
+
+.logo {
+  width: 80px;
+}
+
+.menu {
+  font-size: 40px;
+}
+
+footer .container {
+  padding: 24px 15px;
+}
+
+.social-image {
+  width: 24px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid var(--color-white);
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+}
+
+.contact-item + .contact-item {
+  margin-top: 8px;
+}
+
+.contact-link {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact .material-icons {
+  margin-right: 8px;
+}
+
+.copyright-item {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.copyright-item + .copyright-item {
+  margin-top: 8px;
+}
+
+/* ---- pad ---- */
+@media (min-width: 768px) {
+  header .container {
+    padding: 16px 36px;
+  }
+  .nav {
+    display: flex;
+    gap: 64px;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  footer .container {
+    padding: 48px 36px 40px;
+  }
+
+  footer .nav {
+    gap: 48px;
+  }
+
+  footer .nav-link {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .information {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--color-white);
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+
+  .social {
+    gap: 16px;
+  }
+
+  .social-image {
+    width: 40px;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-item:first-child {
+    margin-top: 24px;
+  }
+
+  .contact-link {
+    font-size: 36px;
+    line-height: 54px;
+  }
+
+  .contact .material-icons {
+    font-size: 50px;
+    margin-right: 12px;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .copyright-item + .copyright-item {
+    margin: 0;
+  }
+
+  .copyright-item {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .copyright-item:first-child {
+    font-size: 16px;
+    margin-right: auto;
+  }
+}
+
+/* ---- desktop ---- */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  header .container {
+    padding: 16px 12px;
+  }
+
+  footer .container {
+    padding: 48px 12px 32px;
+  }
+
+  .social {
+    gap: 32px;
+  }
+
+  .social-image {
+    width: 48px;
+  }
+}
