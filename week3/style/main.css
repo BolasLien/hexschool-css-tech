@@ -7,14 +7,10 @@ body {
 :root {
   --color-red: #aa0601;
   --color-red-dark: #650300;
+  --color-red-border: #9F1213;
   --color-pink: #fbf2f2;
   --color-black: #000000;
   --color-white: #ffffff;
-}
-
-a,
-p {
-  color: var(--color-white);
 }
 
 /* ----material icon---- */
@@ -55,6 +51,8 @@ p {
 /* ---- mobile first ---- */
 .container {
   max-width: 100%;
+  padding-left: 13px;
+  padding-right: 14px;
 }
 
 header,footer {
@@ -66,6 +64,14 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header a, footer a, footer p{
+  color: var(--color-white);
+}
+
+header a:hover, footer a:hover{
+  color: var(--color-red-dark);
 }
 
 .nav {
@@ -84,10 +90,6 @@ footer .container {
   padding: 24px 15px;
 }
 
-.social-image {
-  width: 24px;
-}
-
 .information {
   display: flex;
   justify-content: space-between;
@@ -100,6 +102,10 @@ footer .container {
 .social {
   display: flex;
   gap: 8px;
+}
+
+.social-image {
+  width: 24px;
 }
 
 .contact-item + .contact-item {
@@ -125,8 +131,51 @@ footer .container {
   margin-top: 8px;
 }
 
-/* ---- pad ---- */
+h1.title{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  border-left: 8px solid var(--color-red-border);
+}
+
+h2.subtitle{
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+main.qna {
+  padding-top: 40px;
+  padding-bottom: 64px;
+}
+
+.qna-item + .qna-item{
+  margin-top: 24px;
+}
+
+.qna-item h3{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.qna-item p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+/* ---- tablet ---- */
 @media (min-width: 768px) {
+  .container{
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
   header .container {
     padding: 16px 36px;
   }
@@ -191,8 +240,8 @@ footer .container {
   }
 
   .contact .material-icons {
-    font-size: 50px;
-    margin-right: 12px;
+    font-size: 48px;
+    margin-right: 16px;
   }
 
   .copyright {
@@ -214,13 +263,30 @@ footer .container {
     font-size: 16px;
     margin-right: auto;
   }
+
+  main.qna {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  h1.title{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+
+  .qna-item + .qna-item{
+    margin-top: 32px;
+  }
 }
 
 /* ---- desktop ---- */
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
     max-width: 1320px;
     margin: 0 auto;
+    padding-right: 12px;
+    padding-left: 12px;
   }
 
   header .container {
@@ -237,5 +303,20 @@ footer .container {
 
   .social-image {
     width: 48px;
+  }
+
+  main.qna {
+    padding-top: 96px;
+    padding-bottom: 80px;
+  }
+
+  h1.title{
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 32px;
+  }
+
+  .qna-item + .qna-item{
+    margin-top: 32px;
   }
 }
