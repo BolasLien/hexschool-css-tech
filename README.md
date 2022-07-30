@@ -3,3 +3,4 @@
 
 [week1](https://bolaslien.github.io/hexschool-css-tech/week1/)
 [week2](https://bolaslien.github.io/hexschool-css-tech/week2/)
+[week3](https://bolaslien.github.io/hexschool-css-tech/week3/)

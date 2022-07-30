@@ -55,15 +55,10 @@ body {
   padding-right: 14px;
 }
 
+/* header */
+
 header,footer {
   background-color: var(--color-red);
-}
-
-header .container {
-  padding: 16px 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header a, footer a, footer p{
@@ -72,6 +67,13 @@ header a, footer a, footer p{
 
 header a:hover, footer a:hover{
   color: var(--color-red-dark);
+}
+
+header .container {
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
@@ -85,6 +87,8 @@ header a:hover, footer a:hover{
 .menu {
   font-size: 40px;
 }
+
+/* footer */
 
 footer .container {
   padding: 24px 15px;
@@ -130,6 +134,8 @@ footer .container {
 .copyright-item + .copyright-item {
   margin-top: 8px;
 }
+
+/* qna */
 
 h1.title{
   font-size: 24px;
